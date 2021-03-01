@@ -11,13 +11,17 @@ const CollectionSection = ({sectionData}) => {
             <h1 className='title'>
                 {title}
             </h1>
-           {
-               sectionData.items.map(item =>(
-               
-                <Preview_items key={item.id} items={item}/>
-              
-               ))
-           }
+            <div className='items'>
+                {
+                sectionData.items.map(item =>(
+                
+                    <Preview_items key={item.id} items={item}/>
+                
+                ))
+            }
+
+            </div>
+          
            
         
     </div>
